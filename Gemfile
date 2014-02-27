@@ -27,6 +27,22 @@ gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 1.2'
 
+group :development, :test do
+  # https://github.com/rspec/rspec-rails
+  gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'database_cleaner'
+  gem 'pry-rails'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'faker'
+  gem 'simplecov'
+  # https://github.com/kina/simplecov-rcov-text
+  gem 'simplecov-rcov-text'
+  gem 'shoulda-matchers'
+end
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
@@ -40,6 +56,9 @@ end
 # Run js from ruby
 gem 'execjs'
 gem 'therubyracer'
+
+# code metrics (coverage, best practices, smells)
+gem 'metric_fu', :require => false
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
