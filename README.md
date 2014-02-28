@@ -8,5 +8,6 @@ This project for quickly getting started with rails, postgresql and vagrant
 4. `$ vagrant up`
 5. `$ vagrant ssh`
 6. `$ cd /vagrant/`
-7. `$ rails s`
-8. Visit http://localhost:3000 in your browser
+7. `$ bundle install`
+8. `$ rails s`
+9. Visit http://localhost:3000 in your browser

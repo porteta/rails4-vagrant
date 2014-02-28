@@ -33,6 +33,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'pry-rails'
   gem 'factory_girl_rails'
+  gem 'guard-rspec'
 end
 
 group :test do
@@ -41,6 +42,7 @@ group :test do
   # https://github.com/kina/simplecov-rcov-text
   gem 'simplecov-rcov-text'
   gem 'shoulda-matchers'
+  gem 'capybara'
 end
 
 group :development do
